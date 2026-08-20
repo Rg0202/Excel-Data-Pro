@@ -1,4 +1,2 @@
-const toggle=document.querySelector(".menu-toggle");
-const nav=document.querySelector("#mainNav");
-toggle?.addEventListener("click",()=>nav.classList.toggle("open"));
-document.querySelectorAll("#mainNav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+const nav=document.querySelector("#mainNav"),toggle=document.querySelector(".menu-toggle");toggle?.addEventListener("click",()=>nav.classList.toggle("open"));document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));window.addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-window.innerHeight;document.querySelector(".scroll-progress").style.width=(h?window.scrollY/h*100:0)+"%";});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});document.querySelectorAll(".area-card,.latest-grid article,.resource-feature,.video-layout").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(18px)";el.style.transition="opacity .6s ease,transform .6s ease";observer.observe(el)});document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll(".show").forEach(el=>{el.style.opacity="1";el.style.transform="translateY(0)"}));
