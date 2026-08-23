@@ -57,3 +57,8 @@ footer{background:#020812;color:#74899d;padding:38px 0 15px}.footer-main{display
 #mainNav{display:none;position:absolute;z-index:50;top:100%;right:0;left:0;background:#111d2c;padding:18px 22px;flex-direction:column;align-items:flex-start;gap:16px;border-top:1px solid rgba(255,255,255,.08);box-shadow:0 20px 35px rgba(0,0,0,.18)}
 #mainNav.open{display:flex}
 }
+
+/* V4.2 — Eliminar definitivamente la tira de temas entre Hero y contenido */
+.topic-strip,.topics-strip,.ticker,.marquee,.tag-strip,.keyword-strip,.hero-topics,.hero-tags,
+.scroll-topics,.topic-bar,.data-strip{display:none !important;height:0 !important;min-height:0 !important;
+padding:0 !important;margin:0 !important;border:0 !important;overflow:hidden !important}
