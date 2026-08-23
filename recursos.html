@@ -1,1 +1,727 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Recursos | Excel Data Pro</title><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="topline"><div class="container top-inner"><span>DATA ANALYTICS • BUSINESS INTELLIGENCE • SUPPLY CHAIN</span><div><a href="https://www.youtube.com/@excel_data_pro" target="_blank">YouTube</a><a href="https://www.linkedin.com/in/excel-data-pro-15ba54249/" target="_blank">LinkedIn</a><a href="https://www.instagram.com/excel_data_pro/" target="_blank">Instagram</a></div></div></div><div class="nav-wrap"><div class="container nav"><a class="brand" href="index.html"><span class="brand-logo">EDP</span><span class="brand-copy"><strong>Excel Data Pro</strong><small>Convierte datos en decisiones</small></span></a><nav><a href="index.html">Inicio</a><a href="excel.html">Excel</a><a href="power-bi.html">Power BI</a><a href="sap.html">SAP</a><a href="logistica.html">Logística</a><a href="recursos.html">Recursos</a></nav></div></div></header><main><section class="sub-hero"><div class="container"><span class="kicker">CENTRO DE RECURSOS</span><h1>Aprende. Practica. <strong>Aplica.</strong></h1><p>Plantillas, datasets y guías organizados para ayudarte a trabajar con datos, procesos y tecnología.</p><a class="back" href="index.html">← Volver al inicio</a></div></section><section class="sub-content"><div class="container"><div class="resource-table"><div class="resource-row"><span class="type">EXCEL</span><strong>Plantilla de análisis ABC</strong><small>Clasificación de inventario</small><span class="badge">PRÓXIMAMENTE</span></div><div class="resource-row"><span class="type">DATASET</span><strong>Dataset comercial</strong><small>Ventas y análisis</small><span class="badge">PRÓXIMAMENTE</span></div><div class="resource-row"><span class="type">POWER BI</span><strong>Dashboard comercial</strong><small>Modelo y visualización</small><span class="badge">PRÓXIMAMENTE</span></div><div class="resource-row"><span class="type">SAP</span><strong>Guía SAP MM / WM</strong><small>Procesos y conceptos</small><span class="badge">PRÓXIMAMENTE</span></div><div class="resource-row"><span class="type">LOGÍSTICA</span><strong>KPIs de inventario</strong><small>Indicadores operativos</small><span class="badge">PRÓXIMAMENTE</span></div></div><div class="sub-note"><strong>Esta es la estructura del catálogo.</strong> En la siguiente etapa podemos subir los archivos reales y convertir cada elemento en un recurso descargable o producto premium.</div></div></section></main><footer><div class="container footer-main"><div><a class="footer-brand" href="index.html"><span>EDP</span><strong>Excel Data Pro</strong></a><p>Excel • Power BI • SAP • Logística • Data Analytics</p></div><div class="footer-links"><a href="index.html">Inicio</a><a href="excel.html">Excel</a><a href="power-bi.html">Power BI</a><a href="sap.html">SAP</a></div></div><div class="container copyright">© 2026 Excel Data Pro · Convierte datos en decisiones.</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recursos | Excel Data Pro</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f8fc;
+    color:#07152b;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.topbar{
+    background:#030b18;
+    color:#7fa1c5;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.topbar span{
+    color:#10c6e8;
+}
+
+.social a{
+    color:#7fa1c5;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#18d28b;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    height:100px;
+    background:#121d2c;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    border-bottom:1px solid #23364d;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    border:2px solid transparent;
+    background:
+        linear-gradient(#101c2d,#101c2d) padding-box,
+        linear-gradient(135deg,#18d28b,#00bcd4,#4058ff,#793cff) border-box;
+}
+
+.brand-name{
+    color:white;
+    font-size:34px;
+    font-weight:800;
+}
+
+.brand-tag{
+    color:#718aa5;
+    font-size:11px;
+    letter-spacing:3px;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    gap:34px;
+}
+
+.nav-links a{
+    color:#aebed0;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#18d28b;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    position:relative;
+    padding:110px 8% 95px;
+    background:
+        radial-gradient(circle at 85% 30%,rgba(0,188,212,.14),transparent 30%),
+        radial-gradient(circle at 10% 70%,rgba(78,70,220,.18),transparent 35%),
+        linear-gradient(135deg,#080d28,#061525 60%,#062c39);
+    color:white;
+    overflow:hidden;
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border:1px solid rgba(0,210,255,.08);
+    border-radius:50%;
+    right:-150px;
+    top:-180px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:1000px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 18px;
+    border:1px solid #174a68;
+    border-radius:30px;
+    color:#57d7ff;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:28px;
+    background:rgba(5,25,43,.5);
+}
+
+.hero h1{
+    font-size:68px;
+    line-height:1.05;
+    margin-bottom:25px;
+}
+
+.gradient-text{
+    background:linear-gradient(90deg,#18d28b,#00bcd4,#2f72ed,#753cf0);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.hero p{
+    color:#a8c0db;
+    font-size:20px;
+    line-height:1.7;
+    max-width:760px;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.resources{
+    padding:95px 8%;
+}
+
+.section-label{
+    color:#00a8cf;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.section-title{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.section-title span{
+    background:linear-gradient(90deg,#18d28b,#00bcd4,#3e55ed,#743cf0);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.section-description{
+    color:#637c9a;
+    font-size:18px;
+    margin-bottom:50px;
+}
+
+/* =========================
+   RESOURCE CARD
+========================= */
+
+.resource-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+.card{
+    background:white;
+    border:1px solid #dce6f0;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(12,35,60,.06);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 50px rgba(12,35,60,.13);
+}
+
+.card-top{
+    height:170px;
+    padding:25px;
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.card-top:after{
+    content:"";
+    position:absolute;
+    width:170px;
+    height:170px;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:50%;
+    right:-50px;
+    top:-60px;
+}
+
+.green{
+    background:linear-gradient(135deg,#06683e,#0c955c);
+}
+
+.blue{
+    background:linear-gradient(135deg,#075278,#1474b8);
+}
+
+.purple{
+    background:linear-gradient(135deg,#29328c,#6331bd);
+}
+
+.card-category{
+    font-size:11px;
+    letter-spacing:3px;
+    font-weight:bold;
+    opacity:.9;
+}
+
+.card-number{
+    font-size:55px;
+    font-weight:900;
+    margin-top:35px;
+}
+
+.card-body{
+    padding:30px;
+}
+
+.card-body h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.card-body p{
+    color:#647d9b;
+    line-height:1.6;
+    min-height:70px;
+}
+
+.card-meta{
+    margin-top:25px;
+    color:#009bc6;
+    font-size:11px;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+.card-button{
+    display:inline-block;
+    margin-top:22px;
+    padding:12px 20px;
+    border-radius:10px;
+    background:linear-gradient(90deg,#18d28b,#00acd4,#5940e8);
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
+    transition:.3s;
+}
+
+.card-button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(38,112,220,.25);
+}
+
+/* =========================
+   INFO BANNER
+========================= */
+
+.info{
+    margin:0 8% 90px;
+    padding:55px;
+    border-radius:25px;
+    background:
+        radial-gradient(circle at 80% 30%,rgba(0,188,212,.15),transparent 35%),
+        linear-gradient(135deg,#071525,#092c3a);
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.info h2{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+.info p{
+    color:#9fb9d4;
+    line-height:1.6;
+    max-width:700px;
+}
+
+.info-button{
+    white-space:nowrap;
+    padding:15px 25px;
+    border-radius:12px;
+    background:linear-gradient(90deg,#18d28b,#00acd4,#5a3bea);
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:#050f1e;
+    color:#7892ae;
+    padding:45px 8%;
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+}
+
+.footer strong{
+    color:white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .resource-grid{
+        grid-template-columns:1fr;
+    }
+
+    .info{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .topbar{
+        padding:0 5%;
+    }
+
+    .social{
+        display:none;
+    }
+
+    .navbar{
+        padding:0 5%;
+    }
+
+    .brand-name{
+        font-size:25px;
+    }
+
+    .logo{
+        width:55px;
+        height:55px;
+    }
+
+    .hero{
+        padding:75px 5%;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .resources{
+        padding:70px 5%;
+    }
+
+    .section-title{
+        font-size:38px;
+    }
+
+    .info{
+        margin:0 5% 70px;
+        padding:35px;
+    }
+
+    .footer{
+        padding:35px 5%;
+        flex-direction:column;
+        gap:15px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+    <div>
+        DATA ANALYTICS <span>•</span>
+        BUSINESS INTELLIGENCE <span>•</span>
+        SUPPLY CHAIN
+    </div>
+
+    <div class="social">
+        <a href="https://www.youtube.com/@excel_data_pro" target="_blank">YouTube</a>
+        <a href="https://www.linkedin.com/in/excel-data-pro-15ba54249" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/excel_data_pro" target="_blank">Instagram</a>
+    </div>
+
+</div>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="brand">
+
+        <div class="logo">EDP</div>
+
+        <div>
+            <div class="brand-name">Excel Data Pro</div>
+            <div class="brand-tag">CONVIERTE DATOS EN DECISIONES</div>
+        </div>
+
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="excel.html">Excel</a>
+        <a href="power-bi.html">Power BI</a>
+        <a href="sap.html">SAP</a>
+        <a href="logistica.html">Logística</a>
+        <a href="recursos.html">Recursos</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            RECURSOS GRATUITOS • EXCEL DATA PRO
+        </div>
+
+        <h1>
+            Aprende.<br>
+            <span class="gradient-text">Practica. Aplica.</span>
+        </h1>
+
+        <p>
+            Documentos, guías, datasets y herramientas prácticas
+            para mejorar tus conocimientos en Excel, Power BI,
+            SAP y logística.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- RESOURCES -->
+
+<section class="resources">
+
+    <div class="section-label">
+        BIBLIOTECA DIGITAL
+    </div>
+
+    <h2 class="section-title">
+        Recursos <span>gratuitos</span>
+    </h2>
+
+    <p class="section-description">
+        Material práctico para aprender, analizar y aplicar conocimientos
+        directamente en el trabajo.
+    </p>
+
+
+    <div class="resource-grid">
+
+
+        <!-- RECURSO 1 -->
+
+        <article class="card">
+
+            <div class="card-top green">
+
+                <div class="card-category">
+                    LOGÍSTICA
+                </div>
+
+                <div class="card-number">
+                    09
+                </div>
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>
+                    Tipos de Inventarios
+                </h3>
+
+                <p>
+                    Guía práctica sobre los principales tipos de
+                    inventario y sus características dentro de la
+                    gestión logística.
+                </p>
+
+                <div class="card-meta">
+                    PDF · GRATUITO
+                </div>
+
+                <a
+                    href="RG-Tipos-Inventarios.pdf"
+                    target="_blank"
+                    class="card-button">
+                    Leer / Descargar →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- RECURSO 2 -->
+
+        <article class="card">
+
+            <div class="card-top blue">
+
+                <div class="card-category">
+                    PRÓXIMAMENTE
+                </div>
+
+                <div class="card-number">
+                    ABC
+                </div>
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>
+                    Análisis ABC
+                </h3>
+
+                <p>
+                    Material práctico para comprender y aplicar
+                    la clasificación ABC en la gestión de inventarios.
+                </p>
+
+                <div class="card-meta">
+                    LOGÍSTICA · INVENTARIOS
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- RECURSO 3 -->
+
+        <article class="card">
+
+            <div class="card-top purple">
+
+                <div class="card-category">
+                    PRÓXIMAMENTE
+                </div>
+
+                <div class="card-number">
+                    KPI
+                </div>
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>
+                    KPIs Logísticos
+                </h3>
+
+                <p>
+                    Indicadores fundamentales para medir inventarios,
+                    almacenes, transporte y desempeño de la cadena
+                    de suministro.
+                </p>
+
+                <div class="card-meta">
+                    LOGÍSTICA · KPI
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- INFO -->
+
+<section class="info">
+
+    <div>
+
+        <h2>
+            Más recursos están por llegar.
+        </h2>
+
+        <p>
+            Estamos construyendo una biblioteca de contenido práctico
+            sobre logística, inventarios, Excel, Power BI y SAP.
+            El objetivo es que puedas aprender y aplicar,
+            no solamente leer teoría.
+        </p>
+
+    </div>
+
+    <a
+        href="index.html"
+        class="info-button">
+        Explorar Excel Data Pro →
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div>
+        © 2026 <strong>Excel Data Pro</strong>
+    </div>
+
+    <div>
+        Convierte datos en decisiones.
+    </div>
+
+</footer>
+
+</body>
+</html>
